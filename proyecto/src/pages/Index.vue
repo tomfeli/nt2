@@ -2,10 +2,6 @@
   <q-page class="flex flex-center">
     {{ losMedicos }}
     <hr>
-    {{ lasEspec }}
-    <hr>
-    {{ losPacientes }}
-    <hr>
     {{ medicosPorGet }}
     <hr>
     <input type="text" v-on:keypress.enter="agregarEspecialidad"
@@ -16,8 +12,8 @@
 
 <script>
 import { defineComponent } from 'vue'
-// import AGREGARESPECIALIDAD from '../store/medicos/types'
-import * as operaciones from '../store/medicos/types'
+// import AGREGARESPECIALIDAD from '../store/clientes/types'
+// import * as operaciones from '../store/clientes/types'
 
 export default defineComponent({
   name: 'PageIndex',
@@ -28,28 +24,7 @@ export default defineComponent({
   },
   computed: {
     losMedicos: function () {
-      return this.$store.state.medicos.medicos
-    },
-    lasEspec: function () {
-      return this.$store.state.medicos.especialidades
-    },
-    losPacientes: function () {
-      return this.$store.state.pacientes.pacientes
-    },
-    medicosPorGet: function () {
-      return this.$store.getters['medicos/getMedicos']
-    }
-  },
-  methods: {
-    agregarEspecialidad: function () {
-      // Ingresar la nueva especialidad en el store
-      // invoco a la mutacion
-      const esp = this.$refs.refEspecialidad.value
-      this.$store.commit('medicos/' + operaciones.AGREGARESPECIALIDAD, esp)
-      // console.log(document.getElementById('esp').value)
-      console.log(this.nuevaEspecialidad)
-      console.log(this.$refs.refEspecialidad.value)
-      this.$refs.refEspecialidad.value = ''
+      return this.$store.state.clientes.clientes
     }
   }
 })

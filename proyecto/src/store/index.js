@@ -1,16 +1,16 @@
 import { store } from 'quasar/wrappers'
 import { createStore } from 'vuex'
 
-import medicos from './medicos'
-import pacientes from './pacientes'
-import turnos from './turnos'
+import clientes from './clientes'
+import productos from './productos'
+import facturas from './facturas'
 
 export default store(function (/* { ssrContext } */) {
   const Store = createStore({
     modules: {
-      medicos,
-      pacientes,
-      turnos
+      clientes,
+      productos,
+      facturas
     },
     strict: process.env.DEBUGGING
   })

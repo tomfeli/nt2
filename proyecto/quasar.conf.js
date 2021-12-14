@@ -8,7 +8,7 @@
 
 /* eslint-env node */
 const ESLintPlugin = require('eslint-webpack-plugin')
-const { Notify } = require('quasar')
+// const { Notify } = require('quasar')
 const { configure } = require('quasar/wrappers')
 
 module.exports = configure(function (ctx) {

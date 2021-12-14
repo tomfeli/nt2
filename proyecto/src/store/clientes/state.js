@@ -1,39 +1,36 @@
 export default {
-  medicos: {
+  clientes: {
     1111: {
-      nombre: 'Med1',
-      apellido: 'ApMed1',
+      nombre: 'Nicolas',
+      apellido: 'a',
       direccion: 'Calle 1 nro 1',
       email: 'med1@medicos.com.ar',
       fechaIngreso: '2021/01/01',
-      especialidad: 'Traumatologo'
+      act: true
     },
     2222: {
-      nombre: 'Med2',
-      apellido: 'ApMed2',
+      nombre: 'Martin',
+      apellido: 'b',
       direccion: 'Calle 2 nro 2',
       email: 'med2@medicos.com.ar',
       fechaIngreso: '2021/01/02',
-      especialidad: 'Clinico'
+      act: true
     },
     3333: {
-      nombre: 'Med3',
-      apellido: 'ApMed3',
+      nombre: 'Carlos',
+      apellido: 'c',
       direccion: 'Calle 3 nro 3',
       email: 'med3@medicos.com.ar',
       fechaIngreso: '2021/01/03',
-      especialidad: 'Odontologia'
+      act: true
     },
     4444: {
-      nombre: 'Med4',
-      apellido: 'ApMed4',
+      nombre: 'Juan',
+      apellido: 'd',
       direccion: 'Calle 4 nro 4',
       email: 'med4@medicos.com.ar',
       fechaIngreso: '2021/01/04',
-      especialidad: 'Clinico'
+      act: true
     }
-  },
-  especialidades: [
-    'Clinico', 'Odontologia', 'Traumatologo', 'Oftalmologo', 'Cardiologo'
-  ]
+  }
 }
